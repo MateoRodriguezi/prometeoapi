@@ -1,19 +1,27 @@
-import React, { Component }  from 'react';
-import {Provider} from 'react-redux'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Home from './containers/pages/home';
-import Error404 from './containers/errors/Error404';
+import React from 'react';
+import './App.css';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {Home} from './containers/pages/Home.jsx';
+import {Error404} from './containers/errors/Error404.jsx';
+
 
 function App() {
   return (
-    <Provider>
+    <div>
+
       <Router>
         <Routes>
+          {/* Error Display */}
           <Route path="*" element={<Error404/>}/>
+
+          {/* Home Display */}
           <Route path="/" element={<Home/>}/>
+
         </Routes>
       </Router>
-    </Provider>
+
+    </div>
   );
 }
 

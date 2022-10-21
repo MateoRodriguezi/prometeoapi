@@ -1,11 +1,11 @@
-import FullWidthLayout from "../../hocs/Layouts/FullWidthLayout";
-import React, { Component }  from 'react';
+import FullWidthLayout  from "hocs/layouts/FullWidthLayout";
 
 function Error404(){
     return(
         <FullWidthLayout>
             Error
         </FullWidthLayout>
-    )}
+    )
+}
 
-    export default Error404
+export default Error404
