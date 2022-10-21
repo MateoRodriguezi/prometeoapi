@@ -41,6 +41,8 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
+    'apps.prometeo',
+    'apps.userapp'
 ]
 
 THIRD_PARTY_APPS = [
