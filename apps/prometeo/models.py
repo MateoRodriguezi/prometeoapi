@@ -5,8 +5,8 @@ from apps.userapp.models import Account
 
 
 class BankAccount(models.Model):
-    bank_name = models.CharField(max_length=128)
-    country = models.CharField(max_length=128)
+    bank_name = models.CharField(max_length=128, null=True, blank=True)
+    country = models.CharField(max_length=128, null=True, blank=True)
 
 
     def __str__(self):
