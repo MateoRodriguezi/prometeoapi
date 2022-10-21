@@ -15,7 +15,7 @@ Construido con
 Python
 Django
 Js
-CSS
+CSS & Tailwind
 React
 
 
